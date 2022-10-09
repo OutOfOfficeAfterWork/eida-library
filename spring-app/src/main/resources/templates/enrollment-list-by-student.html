@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<ul th:each="s : ${subjects}">
+    <li>
+        (<span th:text="${s.isMajor()?'전공':'교양'}">전공여부</span>) <span th:text="${s.name}">과목명</span> ( <span th:text="${s.engName}">영문명</span> )
+    </li>
+</ul>
+</body>
+
+</html>

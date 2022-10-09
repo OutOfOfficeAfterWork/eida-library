@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<ul>
+    <li th:each="entry : ${enrollmentMap}">
+        <span th:text="${entry.key.subjectName}"> 과목 - </span>
+        <span th:text="${entry.key.major?.majorName}"> 전공 </span>
+        <ul th:each="list : ${entry.value}">
+        <li th:text="${list.student.name}"></li>
+        </ul>
+    </li>
+</ul>
+</body>
+
+</html>

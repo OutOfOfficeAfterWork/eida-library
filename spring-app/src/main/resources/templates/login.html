@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<body>
+<section>
+    <div class="centered-content">
+        <form th:action="@{/login}" th:method="post">
+            <div class="form-main">
+                <label> <input type="text" name="username" placeholder="이름 또는 이메일" required> </label>
+                <label> <input type="password" name="password" placeholder="비밀번호" required> </label>
+            </div>
+            <div class="form-sub">
+                <a href="/signup">회원가입</a>
+            </div>
+            <div th:if="${param.error}" class="error-msg text-danger">
+                이름(이메일)과 비밀번호를 확인해주세요.
+            </div>
+            <button type="submit" class="account-button">login</button>
+        </form>
+    </div>
+</section>
+</body>
+
+</html>

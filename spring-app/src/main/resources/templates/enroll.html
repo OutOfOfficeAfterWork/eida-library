@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h2>수강신청</h2>
+
+<form th:object="${enrollmentForm}" th:action="@{/enroll}" th:method="post">
+
+    <table>
+    <tr th:each="major, stat :${enrollmentForm.major}">
+        <td th:text="*{major[__${stat.index}__].subjectName}">과목명</td>
+        <td>
+            <input th:field="*{major[__${stat.index}__].subjectName}" hidden>
+            <input type="checkbox" th:field="*{major[__${stat.index}__].enrolled}">
+        </td>
+    </tr>
+    <tr th:each="elective, stat:${enrollmentForm.electives}">
+        <td th:text="*{electives[__${stat.index}__].subjectName}">과목명</td>
+        <td>
+            <input th:field="*{electives[__${stat.index}__].subjectName}" hidden>
+            <input type="checkbox" th:field="*{electives[__${stat.index}__].enrolled}">
+        </td>
+    </tr>
+</table>
+
+    <button type="submit">
+        등록
+    </button>
+
+</form>
+
+</body>
+
+</html>

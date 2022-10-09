@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:text="${message}">Message</div>
+<div th:text="${#authentication.getName().equals('admin') ? 'admin' : 'student'}">User</div>
+</body>
+
+</html>

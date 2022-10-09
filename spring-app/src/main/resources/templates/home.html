@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:if="${#authentication.getName().equals('admin')}">
+    <a href="/major-register">전공등록</a>
+    <a href="/subject-register">과목등록</a>
+    <a href="/enrollment-list-admin">수강신청내역</a>
+</div>
+<div th:if="${!#authentication.getName().equals('admin')}">
+    <a th:href="@{'/enroll'}">수강신청</a>
+    <a th:href="@{'/enrollment-list'}">수강신청내역</a>
+</div>
+<form th:action="@{/logout}" th:method="post">
+    <button type="submit" class="account-button">logout</button>
+</form>
+</body>
+
+</html>

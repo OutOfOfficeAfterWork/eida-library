@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h2>과목등록</h2>
+<form th:object="${subjectForm}" th:action="@{/subject-register}" th:method="post" novalidate>
+    <div class="form-main">
+        <label><input type="text" th:field="*{name}" placeholder="과목명"></label>
+        <label><input type="text" th:field="*{englishName}" placeholder="영문명"></label>
+        <label>
+            <select name="전공" th:name="majorName">
+                <option value="">교양</option>
+                <option th:each="majorName : ${majorList}"
+                        th:value="${majorName}"
+                        th:utext="${majorName}"></option>
+            </select>
+        </label>
+        <button type="submit">
+            submit
+        </button>
+    </div>
+</form>
+</body>
+
+</html>

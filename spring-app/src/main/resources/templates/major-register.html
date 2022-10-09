@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h2>전공 등록</h2>
+<form th:object="${majorRegisterForm}" th:action="@{/major-register}" th:method="post" novalidate>
+    <div class="form-main">
+        <label><input type="text" th:field="*{majorName}" placeholder="전공"></label>
+        <label><input type="text" th:field="*{englishName}" placeholder="전공 영문명"></label>
+        <button type="submit">
+            등록
+        </button>
+    </div>
+</form>
+</body>
+
+</html>

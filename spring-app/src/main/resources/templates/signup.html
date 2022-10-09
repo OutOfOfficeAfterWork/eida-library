@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h2>회원가입</h2>
+<form th:object="${signUpForm}" th:action="@{/signup}" th:method="post" id="signup-form" novalidate>
+    <div class="form-main">
+        <label><input type="text" th:field="*{studentCode}" placeholder="학번(아이디)"></label>
+        <label><input type="text" th:field="*{birthDate}" placeholder="생년월일=비밀번호"></label>
+        <label><input type="text" th:field="*{name}" placeholder="이름"></label>
+        <label><input type="text" th:field="*{gender}" placeholder="성별"></label>
+        <label>
+            <select name="전공" th:name="majorName">
+                <option th:each="majorName : ${majorList}"
+                        th:value="${majorName}"
+                        th:utext="${majorName}"></option>
+            </select>
+        </label>
+        <button type="submit" class="account-button" id="signup-button">
+            submit
+        </button>
+    </div>
+</form>
+</body>
+
+</html>
