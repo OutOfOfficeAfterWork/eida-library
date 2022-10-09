@@ -1,6 +1,6 @@
 package org.outofoffice.lib.core.ui;
 
-import org.outofoffice.common.exception.EidaException;
+import org.outofoffice.lib.exception.EidaException;
 import org.outofoffice.lib.context.EidaContext;
 import org.outofoffice.lib.core.client.EidaManagerClient;
 import org.outofoffice.lib.core.client.EidaShardClient;

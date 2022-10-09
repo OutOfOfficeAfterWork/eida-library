@@ -1,5 +1,4 @@
 rootProject.name = 'eida-library'
-include 'eida-common'
 include 'eida-lib'
 include 'eida-spring-support'
 include 'java-app'

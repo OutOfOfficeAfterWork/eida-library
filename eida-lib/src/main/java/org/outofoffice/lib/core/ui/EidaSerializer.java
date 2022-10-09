@@ -1,7 +1,7 @@
 package org.outofoffice.lib.core.ui;
 
 import lombok.extern.slf4j.Slf4j;
-import org.outofoffice.common.exception.EidaException;
+import org.outofoffice.lib.exception.EidaException;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

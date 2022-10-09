@@ -2,7 +2,7 @@ package org.outofoffice.eidaspringsupport;
 
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.outofoffice.common.socket.EidaSocketClient;
+import org.outofoffice.lib.core.socket.EidaSocketClient;
 import org.outofoffice.lib.context.EidaContext;
 import org.outofoffice.lib.core.ui.EidaEntity;
 import org.outofoffice.lib.core.ui.EidaRepository;

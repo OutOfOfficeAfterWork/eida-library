@@ -2,8 +2,8 @@ package org.outofoffice.lib.context;
 
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.outofoffice.common.exception.EidaException;
-import org.outofoffice.common.socket.EidaSocketClient;
+import org.outofoffice.lib.exception.EidaException;
+import org.outofoffice.lib.core.socket.EidaSocketClient;
 import org.outofoffice.lib.core.client.EidaManagerClient;
 import org.outofoffice.lib.core.client.EidaShardClient;
 import org.outofoffice.lib.core.query.EidaDllGenerator;

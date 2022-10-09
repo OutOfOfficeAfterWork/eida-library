@@ -1,6 +1,6 @@
 package org.outofoffice.eida;
 
-import org.outofoffice.common.socket.EidaSocketClient;
+import org.outofoffice.lib.core.socket.EidaSocketClient;
 import org.outofoffice.eida.application.EnrollmentService;
 import org.outofoffice.eida.application.MajorService;
 import org.outofoffice.eida.application.StudentService;

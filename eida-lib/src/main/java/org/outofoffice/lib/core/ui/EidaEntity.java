@@ -1,6 +1,6 @@
 package org.outofoffice.lib.core.ui;
 
-import org.outofoffice.common.exception.EidaException;
+import org.outofoffice.lib.exception.EidaException;
 import org.outofoffice.lib.core.annotation.Id;
 import org.outofoffice.lib.util.ClassUtils;
 

@@ -11,7 +11,6 @@ repositories {
 }
 
 dependencies {
-    implementation project(':eida-common')
     implementation project(':eida-lib')
     annotationProcessor project(':eida-lib')
     implementation 'org.projectlombok:lombok:1.18.24'

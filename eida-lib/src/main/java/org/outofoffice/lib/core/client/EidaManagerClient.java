@@ -1,7 +1,7 @@
 package org.outofoffice.lib.core.client;
 
 import lombok.RequiredArgsConstructor;
-import org.outofoffice.common.socket.EidaSocketClient;
+import org.outofoffice.lib.core.socket.EidaSocketClient;
 import org.outofoffice.lib.core.query.EidaDllGenerator;
 
 

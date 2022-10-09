@@ -1,4 +1,4 @@
-package org.outofoffice.common.exception;
+package org.outofoffice.lib.exception;
 
 
 public class EidaException extends RuntimeException {
